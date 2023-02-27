@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ---------------------------------------- -->
+    <p>First Name</p>
+    <input type="text" id="fInput">
+    <br>
+    <button onclick="firstButton()">Try it</button>
+    <br><br>
+    <span id="ansF"></span>
+
+    <!-- ---------------------------------------- -->
+    <p>Last Name</p>
+    <input type="text" id="lInput">
+    <br>
+    <button onclick="lastButton()">Try it</button>
+    <br><br>
+    <span id="ansL"></span>
+
+
+    <!-- ---------------------------------------- -->
+    <p>Full Name</p>
+    <input type="text" id="nameInput">
+    <br>
+    <button onclick="nameButton()">Try it</button>
+    <br><br>
+    <span id="ans"></span>
+
+    <!-- -------------------------------------------------- -->
+
+    <p>Password</p>
+    <input type="text" id="passwordInput">
+    <br>
+    <button onclick="passButton()">Try it</button>
+    <br>
+    <span id="ansPass"></span>
+
+
+     <!-- -------------------------------------------------- -->
+
+     <p>Email</p>
+     <input type="text" id="emailInput">
+     <br>
+     <button onclick="emailButton()">Try it</button>
+     <br><br>
+     <span id="ansEmail"></span>
+
+
+
+     <!-- --------------------------------------------------
+     -->
+
+     <p>Validate Phone Number with Country Code </p>
+     <p>Phone Number Format</p>
+     <div>
+        (123) 456-7890 <br>
+        +(123) 456-7890 <br>
+        +(123)-456-7890 <br>
+        +(123) - 456-7890<br>
+        +(123) - 456-78-90<br>
+        123-456-7890 <br>
+        123.456.7890 <br>
+        1234567890 <br>
+        +31636363634 <br>
+        075-63546725 <br>
+     </div>
+     <input type="text" id="phoneInput">
+     <br>
+     <button onclick="phoneNumber()">Try it</button>
+     <br><br>
+     <span id="ansPhone"></span>
+
+     <!-- ------------------------------------------------------------------- -->
+
+     <p>Date of Birth</p>
+     <p>format: dd//MM/yyyy </p>
+     <input type="text" id="dateInput">
+     <br>
+     <button onclick="dateOfBirth()">Try it</button>
+     <br><br>
+     <span id="ansDate"></span>
+
+
+
+    <!-- ====================================================
+     -->
+
+     <h2>Permanent Address</h2>
+     <p>limit is 250:</p>
+     <textarea id="textArea"></textarea><br/>
+     <button onclick="validate();" style="margin: 5px 0px;">Try it</button>
+    
+
+<!-- --------------------------------------------------------- 
+ -->
+
+    <p>File Validation</p>
+    <p>Upload an Image</p>
+    <input type="file" id="file" /><br>
+    <button onclick="fileValidation()">Try it</button>
+
+
+<!-- ---------------------------------------------------------
+ -->
+
+    <p>Enter Number</p>
+    <input type="text" id="numberField"><br>
+    <button onclick="numberField()">Try it</button><br>
+    <span id="numberAns"></span>
+
+
+<!-- -----------------------------------------------------------------  -->
+
+    <p>Zip Code Validation</p>
+    <input type="text" id="zipName"><br>
+    <button onclick="zipCode()">Try it</button>
+    <br>
+    <span id="ansZip"></span>
+
+    <br><br><br>
+    <!-- -----------------------------------------  -->
+
+   
+    
+
+
+    <script src="./test.js"></script>
+</body>
+</html>
