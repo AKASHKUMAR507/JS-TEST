@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./validation.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Full Name <span class="star">*</span> </label>
+                <input type="text" id="name" onkeyup="fullName()" placeholder="enter name">
+                <span id="nameAns" class="textColor"></span>
+            </div>
+
+            <div class="input-control">
+                <label for="email">Email <span class="star">*</span></label>
+                <input id="email" name="email" type="text" onkeyup="emailFunc()" placeholder="enter email">
+                <span id="emailAns" class="textColor"></span>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password<span class="star">*</span></label>
+                <input onkeyup="passwordValidation()" id="password" name="password" type="password"  placeholder="enter password">
+                <img src="./hide-svgrepo-com.svg" alt="" class="icon" onclick="showPass()">
+                <span id="passAns" class="textColor"></span>
+            </div>
+            <br>
+            <div class="input-control">
+                <label for="password">Confirm Password<span class="star">*</span></label>
+                <input onkeyup="passwordValidation2()" id="password2" name="password2" type="password"  placeholder="Renter password">
+                <img src="./hide-svgrepo-com.svg" alt="" class="icon" onclick="showPass2()">
+                <span id="passAns2" class="textColor"></span>
+            </div>
+            <br>
+
+            <div class="input-control">
+                <label for="color">Color Picker<span class="star">*</span></label>
+                <div style="border: 1px solid rgb(166, 141, 141);" id="img">
+                    <input id="color" name="color" type="color" onclick="colorValidation()">
+                </div>
+                <span id="colorAns" class="textColor"></span>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="./validation.js"></script>
+</body>
+
+</html>
