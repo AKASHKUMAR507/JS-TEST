@@ -35,7 +35,7 @@
             <div class="input-control">
                 <label for="password">Confirm Password<span class="star">*</span></label>
                 <input onkeyup="passwordValidation2()" id="password2" name="password2" type="password"  placeholder="Renter password">
-                <img src="./hide-svgrepo-com.svg" alt="" class="icon" onclick="showPass2()">
+                <!-- <img src="./hide-svgrepo-com.svg" alt="" class="icon" onclick="showPass2()"> -->
                 <span id="passAns2" class="textColor"></span>
             </div>
             <br>
@@ -47,6 +47,95 @@
                 </div>
                 <span id="colorAns" class="textColor"></span>
             </div>
+
+
+            <div class="input-control">
+                <label for="date">Date<span class="star">*</span></label>
+                <input id="date" name="date" type="date" onkeyup="dateValidation()">
+                <span id="dateAns" class="textColor"></span>
+            </div>
+
+            <div class="input-control">
+                <label for="numeric">Text Field<span class="star">*</span></label>
+                <input id="text" name="text" type="text" onkeyup="textFieldValidation()">
+                <span id="textAns" class="textColor"></span>
+            </div>
+
+            <div class="input-control">
+                <label for="numeric">URL<span class="star">*</span></label>
+                <input id="url" name="url" type="url" onkeyup="urlValidation()">
+                <span id="urlAns" class="textColor"></span>
+            </div>
+
+            <!-- <div class="input-control">
+                <label for="numeric">Numeric Field<span class="star">*</span></label>
+                <input onkeyup="numValidation()" id="numeric" name="numeric" type="number">
+                <span id="numericAns" class="textColor"></span>
+            </div> -->
+
+
+            <div class="input-control">
+                <label for="search">Search Field<span class="star">*</span></label>
+                <input onkeyup="searchValidation()" id="search" name="search" type="text"  placeholder="search">
+                <img src="./search-icon.png" alt="" class="searchIcon" onclick="searchPass()">
+                <span id="searchAns" class="textColor"></span>
+            </div>
+            <br>
+            <div class="input-control">
+                <label for="zip">Zip Code<span class="star">*</span></label>
+                <input id="zip" name="zip" type="zip" onkeyup="zipValidation()">
+                <span id="zipAns" class="textColor"></span>
+                <span id="zipAns1"></span>
+            </div>
+           
+            <div class="input-control">
+                <label for="numeric">Select language<span class="star">*</span></label>
+                
+                <select name="language" id="language" onkeyup="language()">
+                    <option value="">Select language</option>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Russian">Russian</option>
+                </select>
+                <span id="languageAns" class="textColor"></span>
+            </div>
+            <br>
+            
+
+            <div class="input-control">
+                <label for="numeric">Phone Number<span class="star">*</span></label>
+                <input id="phone" name="phone" type="phone" onkeyup="phoneValidation()">
+                <span id="phoneAns" class="textColor"></span>
+            
+            </div>
+            <br>
+            <div class="" onkeyup="genderCheck()">
+                <label for="numeric">Select Gender<span class="star">*</span></label>
+                <br>
+                <span>Female</span>
+                <input type="radio" name="gender" required>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>Male</span>
+                <input type="radio" name="gender" required>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>Other</span>
+                <input type="radio" name="gender" required>
+            </div>
+            <br>
+            <div id="sectionForm" method="post">
+                <h3></h3>
+                <label for="numeric">Please select at least one item<span class="star">*</span></label>
+                <br>
+                Sports: <input type="checkbox" name="section" value="sports"> &nbsp;
+                Business: <input type="checkbox" name="section" value="business"> &nbsp;
+                Health: <input type="checkbox" name="section" value="health"> &nbsp;
+                Society: <input type="checkbox" name="section" value="society"> &nbsp;
+  
+            </div>
+
+            <button>Submit</button>
 
         </form>
     </div>
