@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone Number Validation</title>
+	<style>
+        body{
+            background-color: #13274F;
+        }
+		input[type=text] {
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			resize: vertical;
+			width: 100%;
+		}
+		select {
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			resize: vertical;
+			width: 100%;
+		}
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+		.error {
+			color: red;
+			font-size: 12px;
+			display: none;
+		}
+        .containera{
+           
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .main{
+            width: 300px;
+            /* border: 2px solid rgb(187, 14, 14); */
+            margin-top: 10%;
+            border-radius: 10px;
+            align-items: center;
+            background-color: #F0F8FF;
+            margin-left: 40%;
+            /* margin-right: 50%; */
+        }
+        
+	</style>
+</head>
+<body>
+	<form class="container">
+        <div class="main">
+
+            <label for="country">Country Code:</label>
+            <select id="country" name="country">
+                <option value="+1">USA (+1)</option>
+                <option value="+91">India (+91)</option>
+                <option value="+44">UK (+44)</option>
+                <option value="+81">Japan (+81)</option>
+                <option value="+86">China (+86)</option>
+            </select>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter phone number" onkeyup="validatePhoneNumber()">
+            <span class="error" id="phone-error">Please enter a valid phone number</span>
+            <!-- <button type="submit" onclick="validatePhoneNumber()">Submit</button> -->
+        
+        </div>
+	</form>
+	<script>
+		function validatePhoneNumber() {
+			var country = document.getElementById("country").value;
+			var phone = document.getElementById("phone").value;
+			var phoneRegex = /^\d{10}$/;
+			if (phoneRegex.test(phone)) {
+				document.getElementById("phone-error").style.display = "none";
+				alert("Valid phone number: " + country + phone);
+			} else {
+				document.getElementById("phone-error").style.display = "inline";
+			}
+		}
+	</script>
+</body>
+</html>
